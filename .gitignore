@@ -1,0 +1,11 @@
+.venv/
+.venv-1/
+.venv-q2/
+.torch_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+data/
+q2_training_loss.png
+.DS_Store

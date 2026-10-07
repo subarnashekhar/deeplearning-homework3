@@ -1,0 +1,21 @@
+Question 1 - Convolution, Padding, and Stride
+
+A convlutional layer recieves an input img of size 32 x 32 x 3. It uses 16 filtrs of size 5 x 5, strid S = 1, and pading P = 0.
+
+a. What are N, F, S, and P?
+N = 32, F = 5, S = 1, and P = 0. This meens the input are 32 by 32, the filte is 5 by 5, the step is 1, and no pading is used.
+
+b. Calculate the heigth and widht of the output feautre map using:
+Nout = (N - F + 2P) / S + 1
+Now, Nout = (32 - 5 + 2(0)) / 1 + 1 = 27 + 1 = 28.
+So the output feature map has heigth = 28 and widht = 28.
+
+c. What is the complte output volum, including the number of chanels?
+The output sise is 28 x 28. Since there are 16 filters, each filter make one channel. So the complete output volume is 28 x 28 x 16.
+
+d. If padding is changed so that the spatial dimensions remain 32 x 32, what padding value should be used?
+Use the smae formula: (32 - 5 + 2P) / 1 + 1 = 32. Then 27 + 2P + 1 = 32, so 28 + 2P = 32. Therfor 2P = 4 and P = 2.
+So the corret pading is P = 2.
+
+Final answer: N = 32, F = 5, S = 1, P = 0; output size = 28 x 28; output volume = 28 x 28 x 16; when pading is set to keep size 32 x 32, P = 2.
+
